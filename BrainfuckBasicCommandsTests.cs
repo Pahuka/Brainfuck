@@ -72,8 +72,8 @@ namespace func.brainfuck
 		[Test]
 		public void Read()
 		{
-			Assert.AreEqual("A", Run(",.", "A"));
 			Assert.AreEqual("ABC", Run(",.,.,.", "ABC"));
+			Assert.AreEqual("A", Run(",.", "A"));
 		}
 
 		[Test]

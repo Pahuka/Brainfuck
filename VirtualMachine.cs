@@ -19,7 +19,7 @@ namespace func.brainfuck
             MemoryPointer = 0;
             CommandSet = new Dictionary<char, Action<IVirtualMachine>>();
         }
-
+        
         public void RegisterCommand(char symbol, Action<IVirtualMachine> execute)
         {
             CommandSet.Add(symbol, execute);
