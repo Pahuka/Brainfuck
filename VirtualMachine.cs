@@ -22,7 +22,7 @@ namespace func.brainfuck
         
         public void RegisterCommand(char symbol, Action<IVirtualMachine> execute)
         {
-            if (!CommandSet.ContainsKey(symbol)) CommandSet.Add(symbol, execute);
+            CommandSet.Add(symbol, execute);
         }
 
         public void Run()
